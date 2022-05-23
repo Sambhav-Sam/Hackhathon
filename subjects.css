@@ -1,9 +1,137 @@
+html {
+  /* background-color: #E4E9FD; */
+  /* background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%); */
+  min-height: 1000px;
+  font-family: "helvetica neue";
+}
+
+a {
+  color: blue;
+}
+
 .container2 {
   position: relative;
   min-height: calc(100vh-250px);
-  height: 100vh;
   overflow-x: hidden;
   display: block;
   top: 72px;
+  color: #000;
+}
+
+.box3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  align-items: center;
+  flex-flow: row nowrap;
+  margin: 24px 0px;
+  min-height: 56px;
+  padding: 0px 26px;
+}
+
+.table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h1 {
   color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active1 p {
+  display: inline;
+  background-color: rgb(230, 230, 232);
+  color: white;
+  position: absolute;
+}
+
+.active1 {
+  background: url("/public/images/group-icon.png");
+}
+.active1 img {
+  display: none;
+}
+
+.content-table {
+  border-collapse: collapse;
+  border-radius: 6px;
+  margin: 0.4px 0;
+  font-size: 0.9rem;
+  /* min-width: 400px; */
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 50%;
+}
+.content-table tbody {
+  background-color: rgb(230, 230, 232);
+}
+
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+  letter-spacing: 0.5px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* .content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+} */
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table button {
+  background-color: #e6e6e8;
+  /* color: #e5eff9; */
+  border-radius: 4px;
+  padding: 2px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  width: 20px;
+  display: flex;
+  /* height: 20px; */
+}
+img:hover {
+  cursor: pointer;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .content-table thead {
+    font-size: 0.4rem;
+  }
+  .content-table tbody {
+    font-size: 0.4rem;
+  }
+  .content-table th,
+  .content-table td {
+    padding: 12px 5px;
+    letter-spacing: 0.5px;
+  }
 }
