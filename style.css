@@ -209,7 +209,7 @@ a {
 
 .about::after {
   background: url("/images/home-background.png") center center / cover no-repeat
-  fixed;
+    fixed;
 }
 .left {
   flex: 0.4;
@@ -221,7 +221,7 @@ a {
   object-fit: contain;
 }
 .right {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   flex: 0.6;
 }
 .page-footer {
@@ -301,4 +301,15 @@ a {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .left img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .info {
+    padding: 0px calc(3.5vw + 5px);
+  }
 }
