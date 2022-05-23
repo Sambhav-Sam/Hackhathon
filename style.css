@@ -45,7 +45,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0 36px;
-  letter-spacing: 16px;
+  /* letter-spacing: 16px; */
   z-index: 3;
 }
 .logo {
@@ -58,6 +58,9 @@ a {
 .logo img {
   display: flex;
   width: 100%;
+}
+.logo span{
+  margin-left: -20px;
 }
 .container {
   align-items: center;
